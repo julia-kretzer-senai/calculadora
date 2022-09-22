@@ -1,5 +1,3 @@
-package calculadoraJulia;
-
 import java.util.Scanner;
 
 public class Operacoes {
@@ -12,18 +10,18 @@ public class Operacoes {
 	
 	public void mostrarMenu() {
 
-		System.out.println("Menu de opções: \n1. Soma \n2. Subtração \n3. Divisão \n4. Multiplicação "
-				+ "\n5. Potenciação \n6. Porcentagem \n7. Raiz quadrada");
+		System.out.println("Menu de opÃ§Ãµes: \n1. Soma \n2. SubtraÃ§Ã£o \n3. DivisÃ£o \n4. MultiplicaÃ§Ã£o "
+				+ "\n5. PotenciaÃ§Ã£o \n6. Porcentagem \n7. Raiz quadrada");
 		op = Sc.nextInt();
 
-		System.out.println("Insira a quantidade de números: ");
+		System.out.println("Insira a quantidade de nÃºmeros: ");
 		amount = Sc.nextInt();
 
 	}
 
 	public void somar() {
 		for (int i = 0; i < amount; i++) {
-			System.out.println("Insira um número: ");
+			System.out.println("Insira um nÃºmero: ");
 			double x = Sc.nextDouble();
 			result += x;
 		}
@@ -31,7 +29,7 @@ public class Operacoes {
 
 	public void subtrair() {
 		for (int i = 0; i < amount; i++) {
-			System.out.println("Insira um número: ");
+			System.out.println("Insira um nÃºmero: ");
 			double x = Sc.nextDouble();
 			if (i == 0) {
 				result = x;
@@ -44,7 +42,7 @@ public class Operacoes {
 
 	public void dividir() {
 		for (int i = 0; i < amount; i++) {
-			System.out.println("Insira um número: ");
+			System.out.println("Insira um nÃºmero: ");
 			double x = Sc.nextDouble();
 			if (i == 0) {
 				result = x;
@@ -57,7 +55,7 @@ public class Operacoes {
 
 	public void multiplicar() {
 		for (int i = 0; i < amount; i++) {
-			System.out.println("Insira um número: ");
+			System.out.println("Insira um nÃºmero: ");
 			double x = Sc.nextDouble();
 			if (i == 0) {
 				result = x;
@@ -70,7 +68,7 @@ public class Operacoes {
 
 	public void elevar() {
 		for (int i = 0; i < amount; i++) {
-			System.out.println("Insira um número: ");
+			System.out.println("Insira um nÃºmero: ");
 			double x = Sc.nextDouble();
 
 			if (i == 0) {
@@ -84,7 +82,7 @@ public class Operacoes {
 
 	public void calcularPorcentagem() {
 		for (int i = 0; i < amount; i++) {
-			System.out.println("Insira um número: ");
+			System.out.println("Insira um nÃºmero: ");
 			double x = Sc.nextDouble();
 
 			if (i == 0) {
@@ -97,7 +95,7 @@ public class Operacoes {
 	}
 
 	public void calcularRaiz() {
-		System.out.println("Insira o número: ");
+		System.out.println("Insira o nÃºmero: ");
 		double x = Sc.nextDouble();
 
 		result = Math.sqrt(x);
